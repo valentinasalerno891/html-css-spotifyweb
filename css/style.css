@@ -1,32 +1,137 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
 }
 
-.container {
-    display: flex;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 aside {
-    flex: 0 0 200px;
-    height: 100vh;
-    background-color: orange;
-}
-
-.container-menu {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+    background-color: #040404;
 }
 
 header {
-    /* flex: 1 0; */
-    height: 80px;
-    background-color: #e22bce;
+    background-color: #080b12;
 }
 
 main {
-    height: 500px;
     background-color: blue;
+}
+
+.player {
+    background-color: #ff00bf;
+}
+/* ASIDE */
+
+aside {
+    height:calc(100vh - 80px);
+    width: 200px;
+    float:left;
+}
+
+.content-aside {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 10px;
+}
+
+.content-aside img {
+    width: 110px;
+    margin-bottom: 30px;
+}
+
+.menu {
+    color: grey;
+}
+
+.menu-top nav li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.icons {
+    float: left;
+}
+
+/* .icons #home, #cerca, #libreria {
+    font-size: 500;
+} */
+
+.icons i {
+    font-size: 21px;
+    padding-right: 10px;
+}
+
+.names-menu-top {
+    float: left;
+}
+
+.names-menu-top li {
+    font-size: 11px;
+    font-weight: 700;
+    padding-top: 7px;
+}
+
+.active {
+    color: white;
+}
+
+#playlist {
+    font-size: 12px;
+    color: white;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+.add-playlist i {
+    font-size: 40px;
+    padding: 10px 10px 20px 0px;
+    color: lightgrey;
+}
+
+.add-playlist h4 {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: inline;
+    vertical-align: 10px;
+}
+
+.add-playlist h3 {
+    font-size: 11px;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+
+
+/* HEADER */
+header {
+    width: calc(100% - 200px);
+    height: 80px;
+    float:left;
+}
+
+/* MAIN */
+main {
+    width: calc(100% - 200px);
+    height:calc(100vh - 160px);
+    float:left;
+    color:#fff;
+    padding: 50px;
+    overflow-y: auto;
+}
+
+/* PLAYER */
+.player {
+    height: 80px;
+    width: 100%;
+    float:left;
 }
