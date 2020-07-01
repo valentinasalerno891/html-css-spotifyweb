@@ -23,11 +23,12 @@ header {
 }
 
 main {
-    background-color: blue;
+    background: rgb(173,67,1);
+    background: linear-gradient(45deg, rgba(173,67,1,1) 0%, rgba(39,20,187,1) 100%);
 }
 
 .player {
-    background-color: #ff00bf;
+    background-color: #282828;
 }
 /* ASIDE */
 
@@ -40,11 +41,11 @@ aside {
 .content-aside {
     display: flex;
     flex-direction: column;
-    padding: 25px 10px;
+    padding: 25px 20px;
 }
 
 .content-aside img {
-    width: 110px;
+    width: 125px;
     margin-bottom: 30px;
 }
 
@@ -52,8 +53,16 @@ aside {
     color: grey;
 }
 
-.menu-top nav li {
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+li {
     list-style: none;
+}
+
+.menu-top nav li {
     padding-bottom: 10px;
 }
 
@@ -84,16 +93,19 @@ aside {
     color: white;
 }
 
-#playlist {
+h4 {
     font-size: 12px;
-    color: white;
-    padding-top: 10px;
     text-transform: uppercase;
+}
+
+.menu-middle h4 {
+    color: white;
+    padding-top: 15px;
 }
 
 .add-playlist i {
     font-size: 40px;
-    padding: 10px 10px 20px 0px;
+    padding: 7px 10px 20px 0px;
     color: lightgrey;
 }
 
@@ -111,22 +123,84 @@ aside {
     padding-bottom: 20px;
 }
 
+.menu-bottom {
+    margin-top: 160px;
+    border-bottom: 1px solid;
+    padding-bottom: 8px;
+}
+
+.installa-app i {
+    font-size: 12px;
+}
+
+.installa-app h3 {
+    font-size: 11px;
+    display: inline;
+    margin-left: 10px;
+}
+
+.menu-profile {
+    padding-top: 8px;
+}
+
+.menu-profile i {
+    font-size: 20px;
+}
+
+.menu-profile h3 {
+    font-size: 12px;
+    color: white;
+    display: inline;
+    padding-left: 10px;
+}
+
 
 /* HEADER */
+
 header {
     width: calc(100% - 200px);
     height: 80px;
     float:left;
+    padding: 25px;
 }
+
+.bt-upgrade button {
+    height: 35px;
+    font-family: 'Montserrat';
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    float: right;
+}
+
 
 /* MAIN */
 main {
     width: calc(100% - 200px);
     height:calc(100vh - 160px);
     float:left;
-    color:#fff;
     padding: 50px;
     overflow-y: auto;
+}
+
+.bg-gradient ul {
+    display: flex;
+    justify-content: center;
+}
+
+.main-sections li {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: grey;
+    float: left;
+    padding-right: 20px;
+
 }
 
 /* PLAYER */
