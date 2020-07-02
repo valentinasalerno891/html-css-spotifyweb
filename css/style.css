@@ -33,7 +33,7 @@ main {
 /* ASIDE */
 
 aside {
-    height:calc(100vh - 80px);
+    height: calc(100vh - 80px);
     width: 200px;
     float:left;
 }
@@ -69,10 +69,6 @@ li {
 .icons {
     float: left;
 }
-
-/* .icons #home, #cerca, #libreria {
-    font-size: 500;
-} */
 
 .icons i {
     font-size: 21px;
@@ -180,11 +176,12 @@ header {
 
 
 /* MAIN */
+
 main {
     width: calc(100% - 200px);
-    height:calc(100vh - 160px);
+    height: calc(100vh - 160px);
     float:left;
-    padding: 50px;
+    padding: 20px;
     overflow-y: auto;
 }
 
@@ -193,15 +190,45 @@ main {
     justify-content: center;
 }
 
-.main-sections li {
+.bg-gradient li {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    color: grey;
+    color: #282828;
     float: left;
     padding-right: 20px;
-
 }
+
+.bg-gradient h2 {
+    color: white;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    margin: 10px 10px 10px 0px;
+}
+
+.creato h3 {
+    font-size: 11px;
+    color: #000;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
 
 /* PLAYER */
 .player {
