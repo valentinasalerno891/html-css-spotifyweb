@@ -162,7 +162,8 @@
             </main>
 
             <div class="player">
-                    <div class="riproduzione">
+                <div class="riproduzione">
+                    <div class="menu-left">
                         <div class="album">
                             <img src="https://queenphotos.files.wordpress.com/2013/06/queen_music_bands_band_desktop_4004x2200_hd-wallpaper-935692.jpg" alt="queen">
                         </div>
@@ -172,14 +173,31 @@
                         </div>
                         <div class="preferiti">
                             <i class="far fa-heart"></i>
-                        </div>
-                        <div class="preferiti">
                             <i class="far fa-folder"></i>
                         </div>
                     </div>
-                    <div class="player-bar"></div>
-                    <div class="volume"></div>
 
+                    <div class="player-bar">
+                        <div class="comandi">
+                            <i class="fas fa-random"></i>
+                            <i class="fas fa-step-backward"></i>
+                            <i class="far fa-pause-circle"></i>
+                            <i class="fas fa-step-forward"></i>
+                            <i class="fas fa-redo"></i>
+                        </div>
+                        <div class="durata clearfix">
+                            <div class="durata-rip">
+                                <p id="start">0:00</p>
+                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">                            <!-- <p id="end">5:00</p> -->
+                                <p id="end">5:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="volume">
+                        <p>ciaicciaicciaicciaicciaicciaicciaic</p>
+
+                    </div>
+                </div>
             </div>
         </div>
     </body>

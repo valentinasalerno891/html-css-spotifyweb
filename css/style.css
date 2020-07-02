@@ -291,17 +291,20 @@ main {
 }
 
 .riproduzione {
-    height: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.menu-left {
+    display: flex;
+    align-items: center;
 }
 
 .album {
     width: 50px;
     height: 50px;
-    margin: 15px;
-
 }
 
 .album img {
@@ -311,8 +314,7 @@ main {
 }
 
 .nome-album {
-    align-self: center;
-    margin-right: 40px;
+    margin: 0px 10px;
 }
 
 .nome-album h5 {
@@ -321,7 +323,7 @@ main {
     font-weight: 600;
 }
 
-h3 {
+.nome-album h3 {
     font-size: 11px;
     color: grey;
     font-weight: 600;
@@ -329,14 +331,79 @@ h3 {
 
 .preferiti {
     color: grey;
-    align-self: center;
+    padding-left: 20px;
+}
+
+.menu-left i {
     padding-right: 10px;
 }
 
-/* .player-bar {
-    background-color: grey;
+.player-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.volume {
-    background-color: grey;
+.comandi {
+    color: lightgrey;
+    font-size: 20px;
+}
+
+.player-bar i {
+    margin-left: 20px;
+}
+
+.durata {
+    display: flex;
+    justify-content: center;
+}
+
+/* .barra::before {
+    content: "0:00";
+    color: white;
+    font-size: 11px;
+}
+
+.barra::after {
+    content: "5:00";
+    color: white;
+    font-size: 11px;
 } */
+
+#start {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    left: 10px;
+    font-size: 10px;
+    color: lightgrey;
+}
+
+input {
+    -webkit-appearance: none;
+    width: 400px;
+    height: 3px;
+    background: #d3d3d3;
+    opacity: 0.5;
+    border-radius: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+
+#end {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    right: 10px;
+    font-size: 10px;
+    color: lightgrey;
+}
+
+
+
+.volume {
+    width: 200px;
+    height: 100%;
+    background-color: green;
+}
