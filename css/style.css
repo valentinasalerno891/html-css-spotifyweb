@@ -23,12 +23,13 @@ header {
 }
 
 main {
-    background: rgb(173,67,1);
-    background: linear-gradient(45deg, rgba(173,67,1,1) 0%, rgba(39,20,187,1) 100%);
+    background: rgb(69,22,189);
+    background: linear-gradient(180deg, rgba(69,22,189,1) 16%, rgba(250,104,6,0.7987394787016369) 50%, rgba(40,40,40,1) 100%);
 }
 
 .player {
     background-color: #282828;
+    border-top: 1px solid black;
 }
 /* ASIDE */
 
@@ -55,6 +56,9 @@ aside {
 
 a {
     text-decoration: none;
+}
+
+aside a {
     color: grey;
 }
 
@@ -194,9 +198,12 @@ main {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #282828;
     float: left;
     padding-right: 20px;
+}
+
+.bg-gradient a {
+    color: lightgrey;
 }
 
 .bg-gradient h2 {
@@ -205,24 +212,71 @@ main {
     margin-top: 30px;
 }
 
+.bg-gradient h3 {
+    font-size: 11px;
+    color: #3e2f2f;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 .card {
     background-color: white;
-    width: 150px;
-    height: 150px;
+    width: 146px;
+    height: 146px;
     margin: 10px 10px 10px 0px;
+    position: relative;
 }
 
-.creato h3 {
-    font-size: 11px;
-    color: #000;
-    font-weight: 600;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.card-circle {
+    border-radius: 50%;
+}
+
+.overlay {
+    display: none;
+}
+
+.card:hover .overlay {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 50%; */
+}
+
+.cards h4 {
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    text-transform: none;
+}
+
+.cards h3 {
+    padding: 0;
+    text-align: center;
 }
 
 
