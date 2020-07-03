@@ -347,11 +347,17 @@ main {
 
 .comandi {
     color: lightgrey;
-    font-size: 20px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .player-bar i {
     margin-left: 20px;
+}
+
+#pause {
+    font-size: 25px;
 }
 
 .durata {
@@ -372,38 +378,41 @@ main {
 } */
 
 #start {
-    position: absolute;
-    top: 100%;
-    transform: translateY(-50%);
-    left: 10px;
     font-size: 10px;
     color: lightgrey;
+    padding-right: 10px;
 }
 
 input {
     -webkit-appearance: none;
-    width: 400px;
     height: 3px;
     background: #d3d3d3;
     opacity: 0.5;
     border-radius: 20px;
+}
+
+.durata input {
+    width: 400px;
     margin-top: 20px;
-    position: relative;
 }
 
 #end {
-    position: absolute;
-    top: 100%;
-    transform: translateY(-50%);
-    right: 10px;
     font-size: 10px;
     color: lightgrey;
+    padding-left: 10px;
 }
 
-
-
 .volume {
-    width: 200px;
-    height: 100%;
-    background-color: green;
+    color: lightgrey;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.volume input {
+    width: 120px;
+}
+
+.volume i {
+    margin-right: 15px;
 }
