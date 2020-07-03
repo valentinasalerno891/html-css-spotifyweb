@@ -33,6 +33,7 @@ main {
 }
 
 
+
 /* ASIDE */
 
 aside {
@@ -73,6 +74,10 @@ li {
 a {
     text-decoration: none;
     color: grey;
+}
+
+aside a:hover {
+    color: white;
 }
 
 .menu-top nav li {
@@ -156,6 +161,10 @@ h4 {
     margin-left: 10px;
 }
 
+h3:hover {
+    color: white;
+}
+
 .menu-profile {
     margin: 0 17px;
     padding-top: 8px;
@@ -197,6 +206,10 @@ header {
     float: right;
 }
 
+button:hover {
+    transform: scale(1.1);
+}
+
 
 /* MAIN */
 
@@ -223,6 +236,10 @@ main {
 
 .bg-gradient a {
     color: lightgrey;
+}
+
+a:hover {
+    color: grey;
 }
 
 .bg-gradient h2 {
@@ -361,6 +378,10 @@ main {
     padding-left: 20px;
 }
 
+.player i:hover {
+    color: white;
+}
+
 .menu-left i {
     padding-right: 10px;
 }
@@ -380,7 +401,10 @@ main {
 .player-bar i {
     margin-left: 10px;
     margin-right: 10px;
+}
 
+.player-bar i:hover {
+    transform: scale(1.1);
 }
 
 .durata {
