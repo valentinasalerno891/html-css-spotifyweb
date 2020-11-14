@@ -23,8 +23,7 @@ header {
 }
 
 main {
-    background: rgb(69,22,189);
-    background: linear-gradient(180deg, rgba(69,22,189,1) 16%, rgba(250,104,6,0.7987394787016369) 50%, rgba(40,40,40,1) 100%);
+    background-color: #141922;
 }
 
 .player {
@@ -48,13 +47,11 @@ aside {
 .content-aside {
     display: flex;
     flex-direction: column;
-    padding: 10px 0;
 }
 
 .content-aside img {
-    width: 125px;
-    margin-left: 20px;
-    margin-bottom: 30px;
+    width: 135px;
+    margin: 25px;
 }
 
 .menu {
@@ -88,12 +85,12 @@ aside a:hover {
 
 .icons i {
     font-size: 21px;
-    align-self: center;
-	padding-left: 15px;
+	padding-left: 20px;
 	padding-right: 10px;
 }
 
 .active i {
+    font-size: 25px;
     color: white;
     border-left: 3px solid yellowgreen;
 }
@@ -106,18 +103,13 @@ aside a:hover {
     padding-left: 3px;
 }
 
-.libreria a {
-    padding-left: 14px;
-}
-
 h4 {
     font-size: 12px;
     text-transform: uppercase;
 }
 
 .menu-middle {
-    margin-left: 17px;
-    margin-bottom: 140px;
+    padding: 20px;
 }
 
 .menu-middle h4 {
@@ -142,7 +134,11 @@ h4 {
 .add-playlist h3 {
     font-size: 11px;
     text-transform: capitalize;
-    padding-bottom: 20px;
+    padding-bottom: 6px;
+}
+
+.content-aside-down {
+    padding-bottom: 10px;
 }
 
 .menu-bottom {
@@ -188,8 +184,15 @@ h3:hover {
 header {
     width: calc(100% - 200px);
     height: 80px;
-    float:left;
-    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.bt-upgrade {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .bt-upgrade button {
@@ -203,7 +206,6 @@ header {
     padding: 0px 30px;
     border: 1px solid #fff;
     border-radius: 20px;
-    float: right;
 }
 
 button:hover {
@@ -238,32 +240,35 @@ main {
     color: lightgrey;
 }
 
+.bg-gradient li:first-child a {
+    border-bottom: 3px solid yellowgreen;
+}
+
 a:hover {
     color: grey;
 }
 
-.bg-gradient h2 {
+.h2 h2 {
     color: white;
     font-weight: 700;
-    margin-top: 30px;
+}
+
+.creato h2 {
+    margin-top: 50px;
 }
 
 .bg-gradient h3 {
     font-size: 11px;
-    color: #3e2f2f;
+    color: #959595;
     font-weight: 700;
     padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#creato {
-    color: black;
+    padding-bottom: 30px;
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    margin-bottom: 85px;
 }
 
 .card {
@@ -298,7 +303,7 @@ a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
-    color: white;
+    color: lightgrey;
 }
 
 .card img {
@@ -327,23 +332,17 @@ a:hover {
 
 /* PLAYER */
 .player {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 20px;
+
     height: 80px;
     width: 100%;
-    float:left;
-}
-
-.riproduzione {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px;
 }
 
 .menu-left {
     display: flex;
-    align-items: center;
-    flex: 0 1;
-    flex-grow: 1;
 }
 
 .album {
@@ -387,15 +386,18 @@ a:hover {
 }
 
 .player-bar {
+    display: flex;
+    flex-direction: column;
     flex: 3 1;
 }
 
 .comandi {
-    color: lightgrey;
-    font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: lightgrey;
+    font-size: 15px;
+    padding-bottom: 10px;
 }
 
 .player-bar i {
@@ -407,12 +409,15 @@ a:hover {
     transform: scale(1.1);
 }
 
-.durata {
-    padding: 0 20px;
-}
-
 #pause {
     font-size: 25px;
+}
+
+.durata {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
 }
 
 .durata-rip {
@@ -420,42 +425,36 @@ a:hover {
     align-items: center;
 }
 
-#start {
+#start, #end {
     font-size: 10px;
     color: lightgrey;
-    padding-right: 10px;
+    padding: 0 10px;
     flex: 1 1 30px;
 }
 
-input {
-    -webkit-appearance: none;
-    height: 3px;
-    background: #d3d3d3;
-    opacity: 0.5;
+progress {
+    width: 230px;
+    height: 4px;
+    background: #5a5a5a;
+    border: none;
     border-radius: 20px;
+    opacity: 0.5;
 }
 
-.durata input {
-	flex: 10 1 400px;
-}
-
-#end {
-    font-size: 10px;
-    color: lightgrey;
-    padding-left: 10px;
-    flex: 1 1 30px;
+progress::-moz-progress-bar {
+    background: #c1c1c1;
+    border-radius: 3px;
 }
 
 .volume {
-    color: lightgrey;
-    font-size: 15px;
     display: flex;
     align-items: center;
-    flex: 0 1;
-    flex-grow: 1;
+    color: lightgrey;
+    font-size: 15px;
+    padding-bottom: 10px;
 }
 
-.volume input {
+#volume {
     width: 120px;
 }
 
